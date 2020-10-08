@@ -1,0 +1,23 @@
+#!/bin/python
+
+import math
+import os
+import random
+import re
+import sys
+
+
+# The function is expected to return a STRING.
+# The function accepts STRING sentence as parameter.
+
+
+def reverse_words_order_and_swap_cases(sentence):
+    words = sentence.split()            #reversing using the reversed() function
+    words = list(reversed(words))
+    j = " ".join(words)       #joining the words
+    return j.swapcase()
+
+    
+sentence = raw_input()    
+a = reverse_words_order_and_swap_cases(sentence)
+print(a)
